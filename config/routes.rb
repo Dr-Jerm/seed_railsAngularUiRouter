@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'application#index'
+  get '*path.html' => 'application#index', :layout => 0
   get '*path' => 'application#index'
 
   # Example of regular route:

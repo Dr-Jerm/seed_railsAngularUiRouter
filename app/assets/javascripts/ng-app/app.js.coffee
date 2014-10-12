@@ -22,4 +22,15 @@ angular.module 'myApp',
             url: '/'
             templateUrl: 'home.html'
             controller: 'HomeCtrl'
+        .state 'dashboard',
+            abstract: true
+            url: '/dashboard'
+            templateUrl: 'dashboard/layout.html'
+
+        .state 'dashboard.one',
+            url: ''
+            templateUrl: 'dashboard/one.html'
+        .state 'dashboard.two',
+            url: '/two'
+            templateUrl: 'dashboard/two.html'
     return
